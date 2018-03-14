@@ -1,3 +1,7 @@
 page-home {
 
+  button[disabled=disabled], button:disabled {
+    color: #00008B;
+  background-color: #F8F8FF;
+  }
 }

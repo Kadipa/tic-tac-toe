@@ -1,14 +1,64 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Tic-Tac-Toe
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <table>
+    <tr>
+    <h2> Choose <em>X</em> or <em> O</em> </h2></tr>
+    <tr>
+    <button ion-button icon-start id="11" (click)="play('11')">
+      <ion-icon name="close"></ion-icon>
+    First Player
+    </button>
+    <button ion-button icon-start  id="12" (click)="play('12')">
+      <ion-icon name="egg"></ion-icon>
+      Second Player
+    </button></tr>
+    <tr>
+
+  <div style="border: 25px solid green; width: 350px; height: 350px;">
+  <table>
+    <tr>
+      <td>
+        <button id="1" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('1')" >
+        </button>
+      </td><td>
+        <button id="2" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('2')" >
+        </button>
+      </td><td>
+        <button id="3" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('3')" >
+        </button></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="4" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('4')" >
+            </button>
+          </td><td>
+            <button id="5" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('5')" >
+            </button>
+          </td><td>
+            <button id="6" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('6')" >
+            </button></td>
+            </tr>
+            <tr>
+              <td>
+                <button id="7" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('7')" >
+                </button>
+              </td><td>
+                <button id="8" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('8')" >
+                </button>
+              </td><td>
+                <button id="9" style="background-color: Coral ;  border: 1px solid; height: 100px; width:100px;"  (click)="play('9')" >
+                </button></td>
+                </tr>
+    </table>
+
+</div>
+</tr>
+</table>
 </ion-content>
